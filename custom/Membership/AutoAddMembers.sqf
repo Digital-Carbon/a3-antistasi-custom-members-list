@@ -17,7 +17,7 @@ _uid = getPlayerUID player;
 
 diag_log _logs;
 
-sleep 20;
+uiSleep 20;
 
 waitUntil{!isNull findDisplay 46 && getPlayerUID player != ''};  
 
