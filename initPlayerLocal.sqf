@@ -1,2 +1,2 @@
 // External members list by [GADD] Monkeynutz
-[] execVM "custom\Membership\AutoAddMembers.sqf";
+call compile preprocessFileLineNumbers "custom\Membership\AutoAddMembers.sqf";
