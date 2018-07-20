@@ -3,7 +3,7 @@
 	Author: [GADD]Monkeynutz
 	Description: Script to auto-add members to the members list.
 	
-	DO NOT STEAL THIS AND USE IT WITHOUT MY PERMISSION. Contact me on discord at http://discord.gamingatdeathsdoor.com
+	If you need help, contact me on discord at http://discord.gamingatdeathsdoor.com
 **/
 
 #include "GADDMembersList.sqf"
@@ -29,8 +29,7 @@ if ((getPlayerUID player) in _GADDMembersList) then
 	{
 		hint "Welcome back Server Member...";
 		_areTheyMember = "Yes";
-	}else
-	{
+	} else {
 		miembros pushBackUnique _uid;
 		hint "Welcome Player... You have been automatically added to the Members List because the admin added you to a secret list!";
 		_areTheyMember = "No, but they have been added to the Members List.";
@@ -42,8 +41,7 @@ if ((getPlayerUID player) in _GADDMembersList) then
 	{
 		hint "Welcome Player, you are still a Member.";
 		_areTheyMember = "Yes";
-	}else
-	{
+	} else {
 		hint "Welcome Guest, to become a member on the server and be able to do all that a member can do, you need to ask.";
 	};
 };
